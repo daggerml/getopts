@@ -186,8 +186,6 @@ export default function (argv, opts) {
   }
 
   for (let key in values) if (out[key] === undefined) out[key] = values[key]
-  for (let key in bools) if (out[key] === undefined) out[key] = false
-  for (let key in strings) if (out[key] === undefined) out[key] = ""
 
   return out
 }
